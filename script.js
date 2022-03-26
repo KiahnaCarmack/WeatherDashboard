@@ -1,17 +1,21 @@
 const form = document.getElementsByClassName('.banner form');
-const apiKey = '8824e83d6b7017b4316d3767002ab905';
 const inputValue = document.getElementsByClassName('.input').value;
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apiKey}&units=imperial`;
+const url = ' https://api.openweathermap.org/data/2.5/weather?q='+inputValue+'&appid=9af13d161008a8ca50b9ddca7d85e250'
+const button = document.getElementById('button');
 
 
 
-fetch(url)
-.then(response => response.json())
-  .then(data => {
-  })
-  .catch(() => {
-    msg.textContent = "Please search for a valid city 😩";
-  });
+const data = {
+  key: 'https://api.openweathermap.org/data/2.5/weather?q='+inputValue+'&appid=9af13d161008a8ca50b9ddca7d85e250'
+};
+
+if (button)
+{button.addEventListener('click', function(){
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue+'&appid=9af13d161008a8ca50b9ddca7d85e250')
+.then(response => response.json()) 
+.then(data => console.log(data))
+})
+};
 
 
 
