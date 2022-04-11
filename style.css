@@ -1,29 +1,41 @@
+* {
+  box-sizing: border-box;
+}
 
-.cities-section {
-    margin: 50px 0 20px;
-    background-color: blue;
+.card {
+  float: left;
+  width: 18%;
+  padding: 5px;
+  margin-top: 2%;
+  margin-left: 0.1%;
+}
+.forcastCards {
+  margin-left: 20%;
+}
+.currentinfo {
+  margin-left: 20%;
+  border: solid black 3px;
+  height: 30vh;
+}
+.heading {
+  text-align: center;
+  background-image: linear-gradient(to right, lightblue, darkblue);
+}
+input{
+  width: 20%;
+  
+}
+#button{
+  width: 20%;
+  background-color: rgb(139, 203, 255);
+  margin-top: 1%;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-   
-  .cities-section .cities {
-    display: grid;
-    grid-gap: 32px 20px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-   
-  @media screen and (max-width: 1000px) { 
-    .cities-section .cities {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-   
-  @media screen and (max-width: 700px) {
-    .cities-section .cities {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-   
-  @media screen and (max-width: 500px) {  
-    .cities-section .cities {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
+}

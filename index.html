@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Weather Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Weather Dashboard</title>
 </head>
+
 <body>
   <h1 class="heading">Weather Dashboard</h1>
-  <div class="input bg-secondary">
-  <input type="text" placeholder="Search..." class="inputValue">
-  <button Id="button"type="submit" value="Submit">Enter</button>
-</div>
-      <span class="msg"></span>
-      </section class="ajax-section">
-      <div class="row">
-      <div class=" column2 bg-primary">
-      <div class= "cities"></div>
-<div id="location">
-    <h1 class="city">City name</h2>
-    <p id='date'></p>
-<div class="temp"><span></span></div>
-<div class='description'></div>
-</div>
-<script src = "script.js"></script>
+  <div class="SearchBar">
+    <div class="input ">
+      <input type="text" placeholder="Search..." class="inputValue">
+    </div>
+  </div>
+      <button Id="button" type="submit" value="Submit">Search</button>
+    
+  <div class="currentinfo">
+        <div class="cities"></div>
+        <div id="location">
+          <h1 class="city">
+            </h2>
+            <p id='date'></p>
+            <script>
+              const d = new Date();
+              document.getElementById("date").innerHTML = d;
+            </script>
+            </div>
+
+            <div class="temp"><span></span></div>
+            <div class='description'></div>
+            <div class="icons"></div>
+          </div>
+       <div class="forcastCards">
+        <div class='card'></div>
+        <div class='card'></div>
+        <div class='card'></div>
+        <div class='card'></div>
+        <div class='card'></div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
+
 </html>
