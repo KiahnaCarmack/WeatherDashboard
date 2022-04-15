@@ -17,35 +17,68 @@
   <div class="SearchBar">
     <div class="input ">
       <input type="text" placeholder="Search..." class="inputValue">
+      <p class="storagetext"></p>
+    </div>
+  
+
+  </div>
+  <button Id="button" type="submit" value="Submit">Search</button>
+
+  <div class="currentinfo">
+    <div class="cities"></div>
+    <div id="location">
+      <h1 class="city">
+        </h2>
+        <p id='date'></p>
+        <script>
+          const d = new Date();
+          document.getElementById("date").innerHTML = d;
+        </script>
+    </div>
+
+    <div class="temp"><span></span></div>
+    <div class='description'></div>
+    <img class="icons"></img>
+  </div>
+  <div class="forcastCards">
+    <div class='card'>
+      <h1 class="cityname"></h1>
+      <h2 class="forcastday"></h2>
+      <h3 class="weather"></h3>
+      <h4 class='wdescription'></h4>
+      <img class="icon"></img>
+    </div>
+    <div class='card'>
+      <h1 class="cityname"></h1>
+      <h2 class="forcastday"></h2>
+      <h3 class="weather"></h3>
+      <h4 class='wdescription'></h4>
+      <img class="icon"></img>
+    </div>
+    <div class='card'>
+      <h1 class="cityname"></h1>
+      <h2 class="forcastday"></h2>
+      <h3 class="weather"></h3>
+      <h4 class='wdescription'></h4>
+      <img class="icon"></img>
+    </div>
+    <div class='card'>
+      <h1 class="cityname"></h1>
+      <h2 class="forcastday"></h2>
+      <h3 class="weather"></h3>
+      <h4 class='wdescription'></h4>
+      <img class="icon"></img>
+    </div>
+    <div class='card'>
+      <h1 class="cityname"></h1>
+      <h2 class="forcastday"></h2>
+      <h3 class="weather"></h3>
+      <h4 class='wdescription'></h4>
+      <img class="icon"></img>
     </div>
   </div>
-      <button Id="button" type="submit" value="Submit">Search</button>
-    
-  <div class="currentinfo">
-        <div class="cities"></div>
-        <div id="location">
-          <h1 class="city">
-            </h2>
-            <p id='date'></p>
-            <script>
-              const d = new Date();
-              document.getElementById("date").innerHTML = d;
-            </script>
-            </div>
 
-            <div class="temp"><span></span></div>
-            <div class='description'></div>
-            <div class="icons"></div>
-          </div>
-       <div class="forcastCards">
-        <div class='card'></div>
-        <div class='card'></div>
-        <div class='card'></div>
-        <div class='card'></div>
-        <div class='card'></div>
-        </div>
-
-        <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
